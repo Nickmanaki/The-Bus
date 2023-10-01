@@ -76,13 +76,13 @@ def reservedseats(lista):
 
 def diagram(lista, plate):
     print plate
-    parlista = lista
-    for i in range(len(parlista)):
-        if parlista[i] == 0:
-            parlista[i] = "-"
+    parlista = []
+    for i in range(len(lista)):
+        if lista[i] == 0:
+            parlista.append("-")
         else:
-            parlista[i] = "X"
-    for i in range(0, len(lista) - 5, 4):
+            parlista.append("X")
+    for i in range(0, len(parlista) - 5, 4):
         print parlista[i], parlista[i + 1], " ", parlista[i + 2], parlista[i + 3]
     for i in range(48, 53):
         print parlista[i],;
